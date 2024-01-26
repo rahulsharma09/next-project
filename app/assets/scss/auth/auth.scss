@@ -1,0 +1,53 @@
+.auth{
+    .signed_in{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        line-height: 40px;
+
+        img{
+            border-radius: 100%;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: 24px;
+        }
+
+        .signout{
+            background: #FF3031;
+            color: white;
+            margin-top: 20px;
+            padding: 0px 30px;
+            border-radius: 5px;
+        }
+    }
+
+    .signed_out{
+
+        @extend .signed_in;
+        
+        h1{
+            font-size: 20px;
+
+        }
+
+        .signin{
+            color: white;
+            padding: 0px 30px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid #DAE0E2;
+
+            img{
+                margin-bottom: 0px;
+            }
+        }
+
+    }
+}
