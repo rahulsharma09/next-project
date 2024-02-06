@@ -3,15 +3,16 @@
 import { useSession, signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import GoogleIcon from "@/app/assets/images/svg/google.svg";
+import HomePage from "./home/page";
 
-const HomePage = () => {
+const Home = () => {
   const { data: session } = useSession();
 
-  console.log("data - ", session);
+  // console.log("data - ", session);
 
   return (
     <div className="auth">
-      {session ? (
+      {/* {session ? (
         <div className="signed_in">
           <Image
             src={session.user.image}
@@ -35,9 +36,10 @@ const HomePage = () => {
             <Image src={GoogleIcon} height={20} width={20} /> Sign In using google
           </button>
         </div>
-      )}
+      )} */}
+      <HomePage />
     </div>
   );
 };
 
-export default HomePage;
+export default Home;
