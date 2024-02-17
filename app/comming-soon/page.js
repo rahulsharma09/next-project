@@ -51,7 +51,7 @@ const CommingSoon = () => {
       <div className="data">
         <Image src={SphereImage} alt="sphere" height={50} width={50} />
         <h2 className="">Artificial Intelligence</h2>
-        <p className="description">We are building our <span>Intelligence system</span></p>
+        <p className="description">We are building our <span>Brain</span></p>
 
         <div className="news-letter">
           <p>Subscribe to our newsletter</p>
