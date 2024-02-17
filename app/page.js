@@ -1,9 +1,7 @@
 "use client";
 
 import { useSession, signIn, signOut } from "next-auth/react";
-import Image from "next/image";
-import GoogleIcon from "@/app/assets/images/svg/google.svg";
-import HomePage from "./home/page";
+import CommingSoon from "./comming-soon/page";
 
 const Home = () => {
   const { data: session } = useSession();
@@ -37,7 +35,7 @@ const Home = () => {
           </button>
         </div>
       )} */}
-      <HomePage />
+      <CommingSoon />
     </div>
   );
 };

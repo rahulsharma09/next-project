@@ -8,18 +8,77 @@
     h2 {
       font-family: "Monoton", sans-serif;
       font-weight: 400;
-      font-size: 110px;
+      font-size: 80px;
       margin-top: 10%;
       text-align: center;
+      color: white;
+      color: #fff;
+      text-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #FF10F0,
+        0 0 82px #FF10F0, 0 0 92px #FF10F0, 0 0 102px #FF10F0, 0 0 151px #FF10F0;
 
-      @media only screen and (max-width: 720px){
+      @media only screen and (max-width: 720px) {
         font-size: 50px;
         margin-top: 50%;
       }
 
-      @media only screen and (min-width: 720px) and (max-width: 1200px){
+      @media only screen and (min-width: 720px) and (max-width: 1200px) {
         font-size: 70px;
         margin-top: 20%;
+      }
+    }
+
+    p {
+      font-family: "Monoton", sans-serif;
+      span{
+        background: -webkit-linear-gradient(#fff 35%, #4605BA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 30px;
+      text-align: center;
+      color: white;
+    }
+
+    .news-letter {
+      width: fit-content;
+      background: rgba(254, 62, 218, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 0px solid rgba(254, 62, 218, 0.3);
+      z-index: 3;
+      padding: 20px;
+      transition: all 5s ease forwards;
+      color: white;
+      margin: auto;
+      text-align: center;
+
+      input {
+        border-radius: 5px;
+        background-color: transparent;
+        border: 1px solid white;
+        margin-top: 10px;
+        padding: 4px;
+        outline: none;
+        padding-left: 10px;
+      }
+
+      .btn_subscribe {
+        border: 1px solid grey;
+        padding: 4px 15px;
+        border-radius: 8px;
+        margin-top: 14px;
+        transition: 0.5s all ease;
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
       }
     }
   }
